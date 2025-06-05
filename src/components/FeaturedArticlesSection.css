@@ -1,0 +1,123 @@
+.featured-articles-section {
+  margin-top: 1.5rem; /* Üstten biraz boşluk */
+  padding: 0 1rem; /* Yanlardan padding */
+}
+
+.featured-items {
+  display: flex;
+  gap: 1.5rem; /* Öğeler arası boşluk */
+  flex-wrap: wrap; /* Ekran küçülünce alt satıra geç */
+  justify-content: flex-start; /* Öğeleri sola hizala */
+}
+
+.featured-item-link {
+    text-decoration: none; /* Link alt çizgisini kaldır */
+    color: inherit; /* Metin rengini devral */
+    display: block; /* Tam alanın tıklanabilir olmasını sağla */
+    border-radius: 8px; /* Köşeleri yuvarlak yap */
+    overflow: hidden; /* İçeriğin taşmasını engelle */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Hafif bir gölge */
+    background-color: #fff; /* Beyaz arka plan */
+    flex: 1; /* Esnek boyutlandırma için varsayılan */
+    min-width: 300px; /* Öğelerin minimum genişliği */
+}
+
+.featured-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Kapsayıcının yüksekliğini al */
+    position: relative; /* Sol item için metin konumlandırması */
+}
+
+/* Sol itema özel stil: Metin resmin üzerinde */
+.featured-item-left {
+    flex: 2; /* Sol item daha geniş (yaklaşık 2 birim) */
+}
+
+.featured-item-left .featured-image-container {
+  width: 100%;
+  height: 450px; /* Resim yüksekliği */
+  overflow: hidden;
+}
+
+.featured-item-left .featured-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resmi kutuyu kaplayacak şekilde boyutlandır */
+  display: block;
+}
+
+.featured-item-left .featured-text-content {
+   position: absolute;
+   bottom: 1.5rem;
+   left: 1.5rem;
+   right: 1.5rem;
+   background-color: rgba(255, 255, 255, 0.9); /* Yarı saydam beyaz */
+   padding: 1.5rem; /* İç boşluk */
+   border-radius: 8px;
+   color: #333;
+   text-align: left;
+}
+
+.featured-item-left .featured-item-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #000;
+  line-height: 1.2;
+}
+
+.featured-item-left .featured-item-description {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Sağ itema özel stil: Metin resmin altında */
+.featured-item-right {
+    flex: 1; /* Sağ item daha dar (yaklaşık 1 birim) */
+}
+
+.featured-item-right .featured-image-container {
+    width: 100%;
+    height: 280px; /* Resim yüksekliği */
+    overflow: hidden;
+}
+
+.featured-item-right .featured-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-item-right .featured-text-content {
+    padding: 1.5rem; /* İç boşluk */
+    flex-grow: 1; /* Kalan dikey alanı doldur */
+    background-color: #f9f9f9; /* Hafif gri arka plan */
+    text-align: left;
+}
+
+.featured-item-right .featured-item-title {
+  font-size: 1.6rem; /* Başlık boyutu */
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.featured-item-right .featured-item-description {
+  font-size: 1rem; /* Açıklama boyutu */
+  margin-bottom: 0;
+  color: #555;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .featured-item-link {
+    flex: 0 0 100%; /* Tablet ve mobil görünümde tam genişlik */
+    max-width: none;
+  }
+} 

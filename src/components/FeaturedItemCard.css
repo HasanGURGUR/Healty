@@ -1,0 +1,62 @@
+.featured-item-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff; /* Arka plan beyaz */
+    width: 100%; /* Varsayılan olarak tam genişlik */
+    /* Kartın maksimum genişliğini ve oranını görseldeki gibi ayarlıyorum */
+    max-width: 500px; /* Kartın maksimum genişliğini artırıyorum */
+    /* Ortalamayı kaldırıp sola hizalama yapıyorum */
+    margin: 1.5rem 0 1.5rem 1.5rem; /* Üst, Sağ (0), Alt, Sol boşluk */
+    position: relative; /* İçindeki mutlak konumlandırılmış elemanlar için */
+}
+
+.featured-item-card-image-container {
+  width: 100%;
+  /* Resmi görseldeki orana göre ayarlıyorum, kareye yakın olacak */
+  height: 500px; /* Resim yüksekliğini artırıyorum */
+  overflow: hidden;
+}
+
+.featured-item-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resmi kare alana sığdırırken en boy oranını koruyacak şekilde geri alıyorum */
+  display: block;
+}
+
+.featured-item-card-text-content {
+   position: absolute;
+   /* Görseldeki gibi alttan, soldan ve sağdan boşluk */
+   bottom: 1.5rem; 
+   left: 1.5rem; 
+   right: 1.5rem; 
+   background-color: rgba(255, 255, 255, 0.9); /* Yarı saydam beyaz arka plan */
+   padding: 1.5rem; /* İç boşluğu görseldeki gibi artırıyorum */
+   border-radius: 8px; /* Köşeleri yuvarlak yap */
+   color: #333; 
+   text-align: left; /* Metinleri sola hizala */
+}
+
+.featured-item-card-title {
+  font-size: 1.8rem; /* Başlık boyutunu görseldeki gibi ayarlıyorum */
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75rem; /* Başlık ve açıklama arası boşluk */
+  color: #000; /* Başlık rengi */
+  line-height: 1.2;
+}
+
+.featured-item-card-description {
+  font-size: 1.1rem; /* Açıklama boyutunu görseldeki gibi ayarlıyorum */
+  margin-bottom: 0;
+  color: #333; /* Açıklama rengi */
+  line-height: 1.4;
+}
+
+/* Sağ item stili kaldırıldı - Bu bileşen tek bir kart için kullanılacak */
+/* Responsive ayarlar */
+
+/* ... existing code ... */ 

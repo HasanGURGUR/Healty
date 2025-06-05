@@ -62,7 +62,7 @@ const SaglikliYasamPage = () => {
 
   return (
     <div>
-      <h1>Sağlıklı Yaşam Sayfası</h1>
+      <h1>Sağlıklı Yaşam</h1>
       <TopicSection items={topicItems} />
       {/* Bu sayfaya özgü diğer içerik buraya gelecek */}
     </div>
