@@ -49,8 +49,8 @@
 .main-content {
   padding-top: 80px; /* Header'ın yüksekliği + padding değeri */
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  /* max-width: 1200px; */ /* Tam genişlik için kaldırıyorum */
+  /* margin: 0 auto; */ /* Tam genişlik için kaldırıyorum */
+  /* padding-left: 2rem; */ /* İçeriklere özel padding eklenecek */
+  /* padding-right: 2rem; */ /* İçeriklere özel padding eklenecek */
 }

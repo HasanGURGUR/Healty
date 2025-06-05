@@ -40,7 +40,7 @@ const HomePage = () => {
       image: '/images/japanese-walking.jpg', // Sol item resmi
       title: "Try ‘Japanese Walking’ for Better\nHeart Health",
       description: "Get started with this great low impact fitness hack.",
-      link: '/', // Linki daha sonra ayarlayabiliriz
+      link: '/news/japanese-walking', // Haber detay sayfası linki
       type: 'left', // Sol item için type
       flex: 2 // Sol item daha geniş
     },
@@ -48,7 +48,7 @@ const HomePage = () => {
       image: '/images/macro-calculator.jpg', // Sağ item resmi
       title: "Explore Our New Macro\nCalculator",
       description: "Discover how this tool can help you achieve your health goals.",
-      link: '/', // Linki daha sonra ayarlayabiliriz
+      link: '/araclar/macro-calculator', // Macro Calculator sayfası linki
       type: 'right', // Sağ item için type
       flex: 1 // Sağ item daha dar
     }

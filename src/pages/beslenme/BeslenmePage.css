@@ -1,0 +1,16 @@
+.beslenme-content {
+  padding: 0 1rem; /* Yanlardan 1rem boşluk */
+}
+
+/* İsteğe bağlı: Daha büyük ekranlarda yan boşluğu artırabiliriz */
+@media (min-width: 768px) {
+  .beslenme-content {
+    padding: 0 2rem; /* Tablet ve üzeri ekranlarda 2rem boşluk */
+  }
+}
+
+@media (min-width: 1200px) {
+    .beslenme-content {
+      padding: 0 3rem; /* Daha büyük ekranlarda 3rem boşluk */
+    }
+  } 

@@ -10,6 +10,8 @@ import UykuPage from './pages/uyku/UykuPage'
 import PsikolojiPage from './pages/psikoloji/PsikolojiPage'
 import AraclarPage from './pages/araclar/AraclarPage'
 import CinselSaglikPage from './pages/cinsel-saglik/CinselSaglikPage'
+import NewsDetailPage from './pages/NewsDetailPage'
+import MacroCalculatorPage from './pages/araclar/MacroCalculatorPage'
 import './App.css'
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Route path="/psikoloji" element={<PsikolojiPage />} />
           <Route path="/araclar" element={<AraclarPage />} />
           <Route path="/cinsel-saglik" element={<CinselSaglikPage />} />
+          <Route path="/news/japanese-walking" element={<NewsDetailPage />} />
+          <Route path="/araclar/macro-calculator" element={<MacroCalculatorPage />} />
           {/* Diğer rotalar buraya eklenecek */}
         </Routes>
       </main>

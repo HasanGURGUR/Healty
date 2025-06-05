@@ -1,0 +1,45 @@
+.nutrition-banner {
+  width: 100%; /* Tam genişlik */
+  height: 400px; /* Banner yüksekliği */
+  background: url('/images/nutrition_banner.png') no-repeat center center; /* Arka plan resmi stilini kısaltılmış formda teyit ediyorum */
+  background-size: cover; /* Resmi alanı kaplayacak şekilde boyutlandır */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Dikeyde ortala */
+  align-items: center; /* Yatayda ortala */
+  color: #ffffff; /* Yazı rengi beyaz */
+  text-align: center; /* Metinleri ortala */
+  position: relative;
+  z-index: 0; /* Banner'ın kendi z-index'ini belirliyorum */
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay şeffaflığını biraz azaltıyorum */
+    z-index: 1; /* Metnin altında kalması için */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2; /* Overlay'in üstünde olması için */
+}
+
+.site-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.banner-description {
+  font-size: 1.2rem;
+} 
