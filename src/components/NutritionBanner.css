@@ -1,7 +1,13 @@
 .nutrition-banner {
-  width: 100%; /* Tam genişlik */
+  width: 100vw; /* Tam viewport genişliği */
+  position: relative;
+  left: 50%; /* Yatayda ortalamak için */
+  transform: translateX(-50%); /* Kendi genişliğinin yarısı kadar sola kaydırarak ortalama */
+  margin: 0; /* Marginleri tamamen kaldırıyorum */
+  padding: 0; /* İç boşlukları kaldır */
+  box-sizing: border-box; /* Padding ve border genişliğe dahil edilsin */
   height: 400px; /* Banner yüksekliği */
-  background: url('/images/nutrition_banner.png') no-repeat center center; /* Arka plan resmi stilini kısaltılmış formda teyit ediyorum */
+  background: url('/images/nutrition_banner.jpg') no-repeat center center; /* Arka plan resmi stilini kısaltılmış formda teyit ediyorum */
   background-size: cover; /* Resmi alanı kaplayacak şekilde boyutlandır */
   display: flex;
   flex-direction: column;
@@ -9,7 +15,6 @@
   align-items: center; /* Yatayda ortala */
   color: #ffffff; /* Yazı rengi beyaz */
   text-align: center; /* Metinleri ortala */
-  position: relative;
   z-index: 0; /* Banner'ın kendi z-index'ini belirliyorum */
 }
 
@@ -29,17 +34,17 @@
 }
 
 .site-name {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Healthline daha belirgin */
+  font-weight: normal; /* Kalınlık görseldeki gibi daha az */
+  margin-bottom: 0.2rem; /* Başlığa daha yakın */
 }
 
 .banner-title {
-  font-size: 3rem;
+  font-size: 3.5rem; /* Nutrition daha büyük */
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem; /* Açıklamaya biraz boşluk */
 }
 
 .banner-description {
-  font-size: 1.2rem;
+  font-size: 1.3rem; /* Açıklama biraz daha belirgin */
 } 
