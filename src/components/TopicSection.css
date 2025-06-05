@@ -8,36 +8,47 @@
   flex-wrap: wrap;
   gap: 2rem; /* İtemler arası boşluk */
   justify-content: center; /* Öğeleri yatayda ortala */
+  align-items: stretch; /* Öğelerin dikeyde aynı yüksekliğe gelmesini sağlar */
+}
+
+.topic-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  flex: 0 0 calc(33.33% - 2rem);
+  max-width: 350px;
 }
 
 .topic-item {
-  flex: 0 0 calc(33.33% - 2rem); /* Bir satırda 3 item olacak şekilde genişlik ayarı */
-  max-width: 350px; /* Maksimum genişlik belirleyebiliriz */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Çocuk öğeleri sola hizala */
+  height: 100%;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
+  min-height: 350px;
 }
 
 .topic-image-container {
   width: 100%;
-  height: 200px; /* Resim yüksekliği */
+  height: 200px;
   overflow: hidden;
+  align-self: center; /* Görseli yatayda ortalamak için ekledik */
 }
 
 .topic-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Resmin alanı kaplamasını sağlar */
+  object-fit: cover;
 }
 
 .topic-content {
-  padding: 1rem;
+  padding: 1rem 0.5rem; /* Üst/Alt 1rem, Sol/Sağ 0.5rem padding */
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* İçeriğin kalan alanı doldurmasını sağlar */
+  flex-grow: 1;
 }
 
 .topic-title {
@@ -46,27 +57,31 @@
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: #333;
+  text-align: left; /* Başlığı sola hizala */
 }
 
 .topic-description {
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 1rem;
-  flex-grow: 1; /* Açıklamanın kalan alanı doldurmasını sağlar */
+  flex-grow: 1;
+  text-align: left;
+  width: 100%;
 }
 
 .go-to-topic-button {
   display: inline-block;
-  margin-top: auto; /* Butonun alta hizalanmasını sağlar */
+  margin-top: auto;
   padding: 0.5rem 1rem;
-  background-color: transparent; /* Arka plan yok */
-  color: #007bff; /* Mavi renk */
+  background-color: transparent;
+  color: #007bff;
   text-decoration: none;
-  border: 1px solid #007bff; /* Mavi kenarlık */
-  border-radius: 20px; /* Radiuslu kenarlık */
+  border: 1px solid #007bff;
+  border-radius: 20px;
   font-weight: 500;
   transition: all 0.3s ease;
   align-self: flex-start; /* Butonu sola hizala */
+  text-align: left; /* Buton metnini sola hizala */
 }
 
 .go-to-topic-button:hover {
