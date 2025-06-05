@@ -1,0 +1,88 @@
+.topic-section {
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+.topic-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* İtemler arası boşluk */
+  justify-content: center; /* Öğeleri yatayda ortala */
+}
+
+.topic-item {
+  flex: 0 0 calc(33.33% - 2rem); /* Bir satırda 3 item olacak şekilde genişlik ayarı */
+  max-width: 350px; /* Maksimum genişlik belirleyebiliriz */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.topic-image-container {
+  width: 100%;
+  height: 200px; /* Resim yüksekliği */
+  overflow: hidden;
+}
+
+.topic-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resmin alanı kaplamasını sağlar */
+}
+
+.topic-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* İçeriğin kalan alanı doldurmasını sağlar */
+}
+
+.topic-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.topic-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Açıklamanın kalan alanı doldurmasını sağlar */
+}
+
+.go-to-topic-button {
+  display: inline-block;
+  margin-top: auto; /* Butonun alta hizalanmasını sağlar */
+  padding: 0.5rem 1rem;
+  background-color: transparent; /* Arka plan yok */
+  color: #007bff; /* Mavi renk */
+  text-decoration: none;
+  border: 1px solid #007bff; /* Mavi kenarlık */
+  border-radius: 20px; /* Radiuslu kenarlık */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  align-self: flex-start; /* Butonu sola hizala */
+}
+
+.go-to-topic-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .topic-item {
+    flex: 0 0 calc(50% - 2rem); /* Tablet görünümde 2 item */
+  }
+}
+
+@media (max-width: 480px) {
+  .topic-item {
+    flex: 0 0 100%; /* Mobil görünümde 1 item */
+    max-width: none;
+  }
+} 
