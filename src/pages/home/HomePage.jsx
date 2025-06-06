@@ -46,7 +46,7 @@ const HomePage = () => {
       // link: '/articles/cortisol-levels'
     },
     {
-      image: '/images//Users/hasangurgur/Desktop/comforting_recipes.jpg.jpg', // Resim yolu placeholder
+      image: '/images/comforting_recipes.jpg', // Resim yolu placeholder
       title: 'Comforting Recipes for a Cozy Dinner',
       // link: '/articles/comforting-recipes'
     },
