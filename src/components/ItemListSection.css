@@ -1,0 +1,110 @@
+.item-list-section {
+  margin: 2rem 0;
+  padding: 0 1rem; /* Kenarlardan biraz boşluk */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left; /* Başlığı sola hizala */
+  border-bottom: 1px solid #eee; /* Altına çizgi */
+  padding-bottom: 0.5rem;
+}
+
+.item-list-container {
+  display: grid; /* Grid düzenine geç */
+  grid-template-columns: repeat(2, 1fr); /* Tam olarak iki eşit sütun */
+  gap: 2rem; /* Öğeler arasında boşluk */
+  /* border: 2px dashed blue; */ /* Geçici kenarlığı kaldırıyorum */
+}
+
+.list-item {
+  display: flex; /* Resim ve içerik yan yana */
+  cursor: pointer;
+  /* border: 1px solid #eee; */ /* Çerçeveyi kaldırıldı */
+  border-radius: 8px;
+  overflow: hidden; /* Taşmayı gizle */
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  align-items: flex-start; /* Resim ve içeriği üstten hizala */
+  height: auto; /* Yüksekliği içeriğe göre ayarla */
+}
+
+.list-item:hover {
+  /* transform: translateY(-5px); */ /* Yükselme kaldırıldı */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti ekliyorum */
+}
+
+.item-image-container {
+  width: 200px; /* Sabit çerçeve genişliği */
+  height: 150px; /* Sabit çerçeve yüksekliği */
+  overflow: hidden; /* Çerçeve dışına taşan kısmı gizle */
+  display: flex; /* İçindeki resmi ortalamak için flexbox kullan */
+  justify-content: center; /* Resmi yatayda ortala */
+  align-items: center; /* Resmi dikeyde ortala */
+  flex-shrink: 0; /* Flex item olarak küçülmesini engelle */
+  margin-right: 1rem; /* Resim alanı ile yazı içeriği arasına boşluk koy */
+}
+
+.item-image {
+  display: block; /* Resmi blok seviyesine getir */
+  width: 100%; /* Kapsayıcının genişliğini doldur */
+  height: 100%; /* Kapsayıcının yüksekliğinin doldur */
+  object-fit: cover; /* Resmin oranını koruyarak kapsayıcıyı kapla (kenarlar kesilebilir) */
+}
+
+.item-content {
+  padding-top: 0; /* Üst dolguyu kaldır */
+  padding-right: 1rem; /* Sağ dolgu */
+  /* padding-bottom: 1rem; */ /* Alt dolguyu kaldırıyorum */
+  padding-left: 1rem; /* Sol dolgu */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Kalan alanı doldur */
+  text-align: left; /* Yazıları sola hizala */
+}
+
+.item-title {
+  font-size: 1.3rem;
+  margin-top: 0; /* Üst boşluğu kaldır */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.item-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Küçük ekranlar için responsive ayarlar */
+@media (max-width: 768px) {
+  .item-list-container {
+    grid-template-columns: repeat(1, 1fr); /* Küçük ekranlarda tek sütun */
+    gap: 1rem; /* Küçük ekranlarda öğeler arası boşluk */
+  }
+
+  .list-item {
+    flex-direction: column; /* Resim ve içerik alt alta gelsin */
+    align-items: center; /* Küçük ekranda içeriği ortala */
+  }
+
+  .item-image-container {
+    width: 100%; /* Küçük ekranda kapsayıcı tam genişlikte */
+    height: 200px; /* Küçük ekranda kapsayıcının yüksekliği */
+    margin-right: 0; /* Sağdaki boşluğu kaldır */
+    margin-bottom: 1rem; /* Resim altına boşluk ekle */
+    /* Flex ortalama stilleri yukarıda tanımlı ve geçerli */
+    border: none; /* Küçük ekranda kenarlığı kaldır */
+  }
+
+  .item-image {
+    /* width: 100%; */ /* Zaten yukarıda tanımlı */
+    /* height: 100%; */ /* Zaten yukarıda tanımlı */
+    object-fit: cover; /* Küçük ekranda da resmi alanı kaplayacak şekilde ölçeklendir */
+  }
+
+  .item-content {
+    padding: 0 1rem 1rem 1rem; /* Alt alta gelince padding */
+    text-align: center; /* Küçük ekranda yazıları ortala */
+  }
+} 

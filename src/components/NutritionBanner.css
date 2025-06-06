@@ -5,8 +5,9 @@
   transform: translateX(-50%); /* Kendi genişliğinin yarısı kadar sola kaydırarak ortalama */
   margin: 0; /* Marginleri tamamen kaldırıyorum */
   padding: 0; /* İç boşlukları kaldır */
+  margin-top: -64px; /* Tapbar yüksekliği kadar yukarı çek */
   box-sizing: border-box; /* Padding ve border genişliğe dahil edilsin */
-  height: 400px; /* Banner yüksekliği */
+  height: 300px; /* Banner yüksekliği */
   background: url('/images/nutrition_banner.jpg') no-repeat center center; /* Arka plan resmi stilini kısaltılmış formda teyit ediyorum */
   background-size: cover; /* Resmi alanı kaplayacak şekilde boyutlandır */
   display: flex;
@@ -24,7 +25,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Overlay şeffaflığını biraz azaltıyorum */
+    background-color: rgba(0, 0, 0, 0.2); /* Hafif bir karartma efekti */
     z-index: 1; /* Metnin altında kalması için */
 }
 
@@ -34,8 +35,8 @@
 }
 
 .site-name {
-  font-size: 1.5rem; /* Healthline daha belirgin */
-  font-weight: normal; /* Kalınlık görseldeki gibi daha az */
+  font-size: 2rem; /* Healthline daha belirgin */
+  font-weight: 600; /* Kalınlık görseldeki gibi daha az */
   margin-bottom: 0.2rem; /* Başlığa daha yakın */
 }
 
