@@ -31,11 +31,44 @@ const BeslenmePage = () => {
     },
   ];
 
-  // Altı öğeli başka bir bölüm için placeholder veri (ihtiyaca göre doldurulacak)
-  const otherSectionItems = [
-    // Buraya 6 adet öğe objesi eklenecek
-    // { image: '/path/to/image.jpg', title: 'Öğe Başlığı', description: 'Öğe Açıklaması', link: '/detay' },
-    // ... 5 tane daha
+  // "NUTRITION FOR CONDITIONS" bölümü için öğe verileri
+  const nutritionForConditionsItems = [
+    {
+      image: '/images/high_blood_pressure.jpg', // Resim yolu placeholder
+      title: 'The 17 Best Foods for High Blood Pressure',
+      description: 'A healthy diet is essential for lowering and maintaining optimal blood pressure levels...',
+      link: '/articles/high-blood-pressure' // Örnek bağlantı
+    },
+    {
+      image: '/images/anti_inflammatory_foods.png', // Resim yolu placeholder
+      title: 'The 13 Most Anti-Inflammatory Foods You Can Eat',
+      description: 'Chronic inflammation can lead to weight gain and disease. This article lists 13 foods that...',
+      link: '/articles/anti-inflammatory-foods' // Örnek bağlantı
+    },
+    {
+      image: '/images/hashimoto_diet.jpg', // Resim yolu placeholder
+      title: 'Hashimoto Diet: Overview, Foods, Supplements, and Tips',
+      description: 'In addition to medication, numerous changes to your diet may help manage Hashimoto\'s...',
+      link: '/articles/hashimoto-diet' // Örnek bağlantı
+    },
+    {
+      image: '/images/diabetes_non_perishables.jpg', // Resim yolu placeholder
+      title: '18 of the Best Non-Perishables for People with Diabetes',
+      description: 'If you have diabetes, you may wonder which non-perishable items have a minimal effect on...',
+      link: '/articles/diabetes-non-perishables' // Örnek bağlantı
+    },
+    {
+      image: '/images/avoid_arthritis_foods.jpg', // Resim yolu placeholder
+      title: 'Foods and Beverages to Avoid with Arthritis',
+      description: 'Several foods and drinks can worsen symptoms of inflammatory arthritis. Here are 12 foods...',
+      link: '/articles/avoid-arthritis-foods' // Örnek bağlantı
+    },
+    {
+      image: '/images/vestibular_migraine_diet.jpg', // Resim yolu placeholder
+      title: 'How to Follow a Vestibular Migraine Diet',
+      description: 'Your diet may play a role in your vestibular migraine symptoms. This article walks you...',
+      link: '/articles/vestibular-migraine-diet' // Örnek bağlantı
+    },
   ];
 
   return (
@@ -44,8 +77,8 @@ const BeslenmePage = () => {
       {/* Görseldeki "FEEL-GOOD FOOD" bölümü */}
       <ItemListSection title="FEEL-GOOD FOOD" items={feelGoodFoodItems} />
 
-      {/* İkinci bir liste örneği (şu an boş) */}
-      {/* <ItemListSection title="Diğer Konular" items={otherSectionItems} /> */}
+      {/* Görseldeki "NUTRITION FOR CONDITIONS" bölümü */}
+      <ItemListSection title="NUTRITION FOR CONDITIONS" items={nutritionForConditionsItems} />
     </>
   );
 };
