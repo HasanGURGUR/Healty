@@ -1,0 +1,60 @@
+.horizontal-item-list-section {
+  margin: 2rem 0;
+  padding: 0 1rem; /* Kenarlardan biraz boşluk */
+}
+
+.horizontal-section-title {
+  font-size: 1.5rem; /* Başlık font boyutunu küçültüyorum */
+  margin-bottom: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #eee; /* Başlık altına çizgi */
+  padding-bottom: 0.5rem;
+}
+
+.horizontal-item-list-container {
+  display: flex; /* Öğeleri yatayda sırala */
+  overflow-x: auto; /* Yatay kaydırma gerekirse */
+  gap: 1.5rem; /* Öğeler arasında boşluk */
+  padding-bottom: 1rem; /* Kaydırma çubuğu için boşluk */
+  /* Scrollbar stilleri eklenebilir isteğe bağlı */
+}
+
+.horizontal-list-item {
+  flex: 1; /* Öğelerin yatay alanı paylaşmasını sağla */
+  /* width: 200px; */ /* Sabit genişlik kaldırıldı */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Resim ve başlık alt alta */
+  text-align: left; /* Yazıları sola hizala */
+}
+
+.horizontal-item-image {
+  width: 100%; /* Kapsayıcı genişliğini kapla */
+  height: 180px; /* Sabit yüksekliği artırıyorum */
+  object-fit: cover; /* Alanı kapla */
+  border-radius: 8px; /* Köşeler yuvarlak */
+  margin-bottom: 0.5rem; /* Resim altına boşluk */
+}
+
+.horizontal-item-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0; /* Varsayılan marginleri kaldır */
+}
+
+/* Responsive ayarlar */
+/* Öğe genişliği artık flex tarafından yönetiliyor, özel genişliklere gerek yok */
+@media (max-width: 992px) {
+  /* .horizontal-list-item { width: 180px; } */
+}
+
+@media (max-width: 768px) {
+  .horizontal-item-list-container {
+    gap: 1rem; /* Boşluğu azalt */
+  }
+  /* .horizontal-list-item { width: 150px; } */
+}
+
+@media (max-width: 480px) {
+  /* .horizontal-list-item { width: 120px; } */
+} 

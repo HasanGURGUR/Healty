@@ -2,31 +2,10 @@ import React from 'react';
 import ExploreSection from '../../components/ExploreSection';
 import FeaturedArticlesSection from '../../components/FeaturedArticlesSection';
 import FeaturedItemCard from '../../components/FeaturedItemCard';
+import HorizontalItemListSection from '../../components/HorizontalItemListSection.jsx';
 // import TopicSection from '../../components/TopicSection'; // TopicSection bileşenini kaldırdık
 
 const HomePage = () => {
-  // Örnek data kaldırıldı
-  // const topicItems = [
-  //   {
-  //     image: '/images/black-health.jpg', // Görseldeki resim için yol
-  //     title: 'Black Health',
-  //     description: 'A space for our community\'s unique health needs.',
-  //     link: '/black-health' // Bu itema tıklandığında gidilecek sayfa (şimdilik örnek)
-  //   },
-  //   // Buraya diğer itemları ekleyebilirsiniz
-  //   {
-  //     image: '/images/sample-topic-2.jpg', 
-  //     title: 'Sample Topic 2',
-  //     description: 'This is a description for sample topic 2.',
-  //     link: '/sample-topic-2'
-  //   },
-  //   {
-  //     image: '/images/sample-topic-3.jpg', 
-  //     title: 'Sample Topic 3',
-  //     description: 'This is a description for sample topic 3.',
-  //     link: '/sample-topic-3'
-  //   },
-  // ];
 
   const featuredCardData = {
     image: '/images/japanese-walking.jpg', // Görseldeki resim için yol (public klasörüne eklemelisiniz)
@@ -54,6 +33,30 @@ const HomePage = () => {
     }
   ];
 
+  // "MORE TOP READS" bölümü için öğe verileri
+  const moreTopReadsItems = [
+    {
+      image: '/images/reducing_screen_time.jpg', // Resim yolu placeholder
+      title: '8 Tips for Reducing Screen Time',
+      // link: '/articles/reducing-screen-time' // İsterseniz link ekleyebilirsiniz
+    },
+    {
+      image: '/images/cortisol_levels.jpg', // Resim yolu placeholder
+      title: 'What Are the Symptoms and Causes of High Cortisol Levels?',
+      // link: '/articles/cortisol-levels'
+    },
+    {
+      image: '/images//Users/hasangurgur/Desktop/comforting_recipes.jpg.jpg', // Resim yolu placeholder
+      title: 'Comforting Recipes for a Cozy Dinner',
+      // link: '/articles/comforting-recipes'
+    },
+    {
+      image: '/images/toxic_work_environment.jpg', // Resim yolu placeholder
+      title: 'How to Deal With a Toxic Work Environment',
+      // link: '/articles/toxic-work-environment'
+    },
+  ];
+
   return (
     <div className="home-page">
       {/* Yeni Featured Articles Section */}
@@ -64,6 +67,9 @@ const HomePage = () => {
 
       {/* Explore Section */}
       <ExploreSection />
+
+      {/* "MORE TOP READS" bölümü */}
+      <HorizontalItemListSection title="MORE TOP READS" items={moreTopReadsItems} />
 
       {/* Yeni Topic Section kaldırıldı */}
       {/* <TopicSection items={topicItems} /> */}
