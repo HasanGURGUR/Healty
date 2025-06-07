@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
+import ScrollToTop from './components/ScrollToTop'
 import HomePage from './pages/home/HomePage'
 import SaglikPage from './pages/saglik/SaglikPage'
 import SaglikliYasamPage from './pages/saglikli-yasam/SaglikliYasamPage'
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <ScrollToTop />
       <main className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
