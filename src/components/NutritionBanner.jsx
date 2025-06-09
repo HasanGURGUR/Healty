@@ -1,13 +1,14 @@
 import React from 'react';
 import './NutritionBanner.css';
 
-const NutritionBanner = () => {
-  const siteName = "healthgrow";
-  const bannerTitle = "Nutrition";
-  const bannerDescription = "Your essential guide to healthy eating";
+const NutritionBanner = ({ siteName, bannerTitle, bannerDescription, backgroundImage }) => {
+
+  const bannerStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+  };
 
   return (
-    <div className="nutrition-banner">
+    <div className="nutrition-banner" style={bannerStyle}>
       <div className="banner-overlay"></div> {/* Yarı saydam overlay */}
       <div className="banner-content"> {/* Metin içeriği */}
         <div className="site-name">{siteName}</div>

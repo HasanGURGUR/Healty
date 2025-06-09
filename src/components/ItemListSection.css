@@ -1,10 +1,12 @@
 .item-list-section {
   margin: 2rem 0;
-  padding: 0 1rem; /* Kenarlardan biraz boşluk */
+  padding: 0 2rem; /* Kenarlardan boşluğu artır */
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
   margin-bottom: 1.5rem;
   text-align: left; /* Başlığı sola hizala */
   border-bottom: 1px solid #eee; /* Altına çizgi */
@@ -36,14 +38,14 @@
 }
 
 .item-image-container {
-  width: 200px; /* Sabit çerçeve genişliği */
-  height: 150px; /* Sabit çerçeve yüksekliği */
+  width: 120px; /* Sabit çerçeve genişliği */
+  height: 120px; /* Sabit çerçeve yüksekliği */
   overflow: hidden; /* Çerçeve dışına taşan kısmı gizle */
   display: flex; /* İçindeki resmi ortalamak için flexbox kullan */
   justify-content: center; /* Resmi yatayda ortala */
   align-items: center; /* Resmi dikeyde ortala */
   flex-shrink: 0; /* Flex item olarak küçülmesini engelle */
-  margin-right: 1rem; /* Resim alanı ile yazı içeriği arasına boşluk koy */
+  margin-right: 0.5rem; /* Resim alanı ile yazı içeriği arasına boşluk koy */
 }
 
 .item-image {
@@ -65,15 +67,17 @@
 }
 
 .item-title {
-  font-size: 1.3rem;
+  font-size: 1.1rem; /* Başlık boyutunu küçült */
   margin-top: 0; /* Üst boşluğu kaldır */
+  padding-top: 0; /* Üst dolguyu kaldır */
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
 .item-description {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Açıklama boyutunu küçült */
   color: #555;
+  margin-top: 0; /* Üst boşluğu kaldır */
 }
 
 /* Küçük ekranlar için responsive ayarlar */

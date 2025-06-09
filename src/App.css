@@ -1,6 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  /* height: 100%; */ /* Kaldırıyorum */
+  /* overflow-y: auto; */ /* Kaldırıyorum */
+  /* max-width: 1280px; */ /* Kaldırıyorum */
+  /* margin: 0 auto; */ /* Kaldırıyorum */
   padding: 2rem;
   text-align: center;
 }
@@ -43,7 +45,7 @@
 
 .app {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */ /* Kaldırıyorum */
 }
 
 .main-content {

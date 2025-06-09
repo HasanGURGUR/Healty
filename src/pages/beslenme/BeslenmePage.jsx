@@ -3,6 +3,13 @@ import NutritionBanner from '../../components/NutritionBanner';
 import ItemListSection from '../../components/ItemListSection.jsx';
 
 const BeslenmePage = () => {
+  const nutritionBannerData = {
+    siteName: "Healthgrow",
+    bannerTitle: "Beslenme",
+    bannerDescription: "Sağlıklı beslenme için temel rehberiniz",
+    backgroundImage: "/images/nutrition_banner.jpg"
+  };
+
   // "FEEL-GOOD FOOD" bölümü için öğe verileri
   const feelGoodFoodItems = [
     {
@@ -73,7 +80,12 @@ const BeslenmePage = () => {
 
   return (
     <>
-      <NutritionBanner />
+      <NutritionBanner 
+        siteName={nutritionBannerData.siteName}
+        bannerTitle={nutritionBannerData.bannerTitle}
+        bannerDescription={nutritionBannerData.bannerDescription}
+        backgroundImage={nutritionBannerData.backgroundImage}
+      />
       {/* Görseldeki "FEEL-GOOD FOOD" bölümü */}
       <ItemListSection title="FEEL-GOOD FOOD" items={feelGoodFoodItems} />
 
