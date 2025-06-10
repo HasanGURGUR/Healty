@@ -1,7 +1,16 @@
 import React from 'react';
 import ItemListSection from '../../components/ItemListSection.jsx';
+import NutritionBanner from '../../components/NutritionBanner';
+import HorizontalItemListSection from '../../components/HorizontalItemListSection';
 
 const UykuPage = () => {
+  const uykuBannerData = {
+    siteName: "Healthgrow",
+    bannerTitle: "Uyku",
+    bannerDescription: "Kaliteli uyku için temel rehberiniz",
+    backgroundImage: "/images/uyku_banner.png"
+  };
+
   const excessiveDaytimeSleepinessItems = [
     {
       image: '/images/why_sleepy.jpg',
@@ -41,12 +50,45 @@ const UykuPage = () => {
     },
   ];
 
+  const insomniaRemediesItems = [
+    {
+      image: '/images/insomnia_remedies.avif',
+      title: 'Home Remedies for Insomnia',
+      description: 'Discover natural ways to improve your sleep quality and overcome insomnia...',
+      link: '/articles/insomnia-remedies'
+    },
+    {
+      image: '/images/natural_sleep_aids.webp',
+      title: '10 Natural Sleep Aids for Better Sleep in 2025',
+      description: 'Explore the most effective natural sleep aids that can help you achieve better sleep...',
+      link: '/articles/natural-sleep-aids'
+    },
+    {
+      image: '/images/meditation_sleep.avif',
+      title: '3 Ways to Meditate for Better Sleep',
+      description: 'Learn meditation techniques specifically designed to improve your sleep quality...',
+      link: '/articles/meditation-for-sleep'
+    },
+    {
+      image: '/images/bedtime_foods.jpg',
+      title: 'The 9 Best Foods and Drinks to Have Before Bed',
+      description: 'Find out which foods and drinks can help you sleep better and which ones to avoid...',
+      link: '/articles/bedtime-foods'
+    }
+  ];
+
   return (
-    <div>
-      {/* <h1>Uyku Sayfası</h1> */}
+    <>
+      <NutritionBanner 
+        siteName={uykuBannerData.siteName}
+        bannerTitle={uykuBannerData.bannerTitle}
+        bannerDescription={uykuBannerData.bannerDescription}
+        backgroundImage={uykuBannerData.backgroundImage}
+      />
       <ItemListSection title="EXCESSIVE DAYTIME SLEEPINESS" items={excessiveDaytimeSleepinessItems} />
+      <HorizontalItemListSection title="SLEEP BETTER" items={insomniaRemediesItems} />
       {/* Bu sayfaya özgü içerik buraya gelecek */}
-    </div>
+    </>
   );
 };
 
