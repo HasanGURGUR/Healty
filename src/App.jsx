@@ -13,6 +13,8 @@ import AraclarPage from './pages/araclar/AraclarPage'
 import CinselSaglikPage from './pages/cinsel-saglik/CinselSaglikPage'
 import NewsDetailPage from './pages/NewsDetailPage'
 import MacroCalculatorPage from './pages/araclar/MacroCalculatorPage'
+import VucutKitleIndeksiPage from './pages/araclar/VucutKitleIndeksiPage'
+import BazalMetabolizmaHiziPage from './pages/araclar/BazalMetabolizmaHiziPage'
 import './App.css'
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
           <Route path="/cinsel-saglik" element={<CinselSaglikPage />} />
           <Route path="/news/japanese-walking" element={<NewsDetailPage />} />
           <Route path="/araclar/macro-calculator" element={<MacroCalculatorPage />} />
+          <Route path="/araclar/vucut-kitle-indeksi" element={<VucutKitleIndeksiPage />} />
+          <Route path="/araclar/bazal-metabolizma-hizi" element={<BazalMetabolizmaHiziPage />} />
           {/* Diğer rotalar buraya eklenecek */}
         </Routes>
       </main>
