@@ -21,11 +21,11 @@
 
 .horizontal-list-item {
   flex: 1; /* Öğelerin yatay alanı paylaşmasını sağla */
-  /* width: 200px; */ /* Sabit genişlik kaldırıldı */
-  cursor: pointer;
   display: flex;
   flex-direction: column; /* Resim ve başlık alt alta */
   text-align: left; /* Yazıları sola hizala */
+  max-width: 280px; /* Maksimum genişlik ekle */
+  min-width: 220px; /* Responsive için minimum genişlik */
 }
 
 .horizontal-item-image {
@@ -36,25 +36,42 @@
   margin-bottom: 0.5rem; /* Resim altına boşluk */
 }
 
+.horizontal-item-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .horizontal-item-title {
   font-size: 1.1rem;
   font-weight: bold;
   margin: 0; /* Varsayılan marginleri kaldır */
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.horizontal-item-content p {
+  font-size: 0.98rem;
+  color: #444;
+  margin: 0.5rem 0 0 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 /* Responsive ayarlar */
-/* Öğe genişliği artık flex tarafından yönetiliyor, özel genişliklere gerek yok */
 @media (max-width: 992px) {
-  /* .horizontal-list-item { width: 180px; } */
+  .horizontal-list-item { max-width: 220px; min-width: 160px; }
 }
 
 @media (max-width: 768px) {
   .horizontal-item-list-container {
     gap: 1rem; /* Boşluğu azalt */
   }
-  /* .horizontal-list-item { width: 150px; } */
+  .horizontal-list-item { max-width: 180px; min-width: 120px; }
 }
 
 @media (max-width: 480px) {
-  /* .horizontal-list-item { width: 120px; } */
+  .horizontal-list-item { max-width: 120px; min-width: 90px; }
 } 
