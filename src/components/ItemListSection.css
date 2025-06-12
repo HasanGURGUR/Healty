@@ -15,7 +15,7 @@
 
 .item-list-container {
   display: grid; /* Grid düzenine geç */
-  grid-template-columns: repeat(2, 1fr); /* Tam olarak iki eşit sütun */
+  grid-template-columns: repeat(4, 1fr); /* Her satırda 4 sütun */
   gap: 2rem; /* Öğeler arasında boşluk */
   /* border: 2px dashed blue; */ /* Geçici kenarlığı kaldırıyorum */
 }

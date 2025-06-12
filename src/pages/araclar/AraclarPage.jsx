@@ -6,7 +6,7 @@ const AraclarPage = () => {
 
   return (
     <div style={{ padding: '2rem' }}>
-      <h1>Araçlar Sayfası</h1>
+      <h1>Araçlar</h1>
       <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
         <div
           style={{
