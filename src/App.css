@@ -1,9 +1,9 @@
 #root {
-  /* height: 100%; */ /* Kaldırıyorum */
-  /* overflow-y: auto; */ /* Kaldırıyorum */
-  /* max-width: 1280px; */ /* Kaldırıyorum */
-  /* margin: 0 auto; */ /* Kaldırıyorum */
-  padding: 2rem;
+  /* height: 100%; */
+  /* overflow-y: auto; */
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  padding: 2rem; /* Eski haline döndürüyorum */
   text-align: center;
 }
 
@@ -49,10 +49,35 @@
 }
 
 .main-content {
-  padding-top: 80px; /* Header'ın yüksekliği + padding değeri */
+  padding-top: 80px; /* Eski haline döndürüyorum */
   width: 100%;
-  /* max-width: 1200px; */ /* Tam genişlik için kaldırıyorum */
-  /* margin: 0 auto; */ /* Tam genişlik için kaldırıyorum */
-  /* padding-left: 2rem; */ /* İçeriklere özel padding eklenecek */
-  /* padding-right: 2rem; */ /* İçeriklere özel padding eklenecek */
+  /* padding-left: 4rem; */ /* Kaldırıyorum */
+  /* padding-right: 4rem; */ /* Kaldırıyorum */
+  /* min-height: calc(100vh - 50px); */ /* Kaldırıyorum */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    /* padding-left: 1rem; */ /* Kaldırıyorum */
+    /* padding-right: 1rem; */ /* Kaldırıyorum */
+  }
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  /* background-color: lightblue; */ /* Test için geçici arka plan rengini kaldırıyorum */
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }

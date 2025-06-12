@@ -15,6 +15,7 @@ import NewsDetailPage from './pages/NewsDetailPage'
 import MacroCalculatorPage from './pages/araclar/MacroCalculatorPage'
 import VucutKitleIndeksiPage from './pages/araclar/VucutKitleIndeksiPage'
 import BazalMetabolizmaHiziPage from './pages/araclar/BazalMetabolizmaHiziPage'
+import TopicDetailPage from './pages/TopicDetailPage'
 import './App.css'
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
           <Route path="/araclar/macro-calculator" element={<MacroCalculatorPage />} />
           <Route path="/araclar/vucut-kitle-indeksi" element={<VucutKitleIndeksiPage />} />
           <Route path="/araclar/bazal-metabolizma-hizi" element={<BazalMetabolizmaHiziPage />} />
+          <Route path="/saglikli-yasam/:topicSlug" element={<TopicDetailPage />} />
+          <Route path="/ruh-sagligi" element={<PsikolojiPage />} />
           {/* Diğer rotalar buraya eklenecek */}
         </Routes>
       </main>

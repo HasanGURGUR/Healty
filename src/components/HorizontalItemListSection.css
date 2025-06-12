@@ -26,6 +26,12 @@
   text-align: left; /* Yazıları sola hizala */
   max-width: 280px; /* Maksimum genişlik ekle */
   min-width: 220px; /* Responsive için minimum genişlik */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.horizontal-list-item:hover {
+  transform: translateY(-5px);
 }
 
 .horizontal-item-image {
@@ -49,6 +55,7 @@
   word-break: break-word;
   overflow-wrap: break-word;
   max-width: 100%;
+  padding: 0 0.5rem;
 }
 
 .horizontal-item-content p {

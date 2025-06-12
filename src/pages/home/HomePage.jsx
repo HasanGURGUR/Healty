@@ -4,6 +4,7 @@ import FeaturedArticlesSection from '../../components/FeaturedArticlesSection';
 import FeaturedItemCard from '../../components/FeaturedItemCard';
 import HorizontalItemListSection from '../../components/HorizontalItemListSection.jsx';
 import ItemListSection from '../../components/ItemListSection.jsx';
+// import './HomePage.css'; // Bu satırı yorum satırı yapıyorum
 // import TopicSection from '../../components/TopicSection'; // TopicSection bileşenini kaldırdık
 
 const HomePage = () => {
