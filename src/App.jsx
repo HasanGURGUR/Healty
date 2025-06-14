@@ -1,6 +1,7 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import HomePage from './pages/home/HomePage'
 import SaglikPage from './pages/saglik/SaglikPage'
@@ -16,34 +17,43 @@ import MacroCalculatorPage from './pages/araclar/MacroCalculatorPage'
 import VucutKitleIndeksiPage from './pages/araclar/VucutKitleIndeksiPage'
 import BazalMetabolizmaHiziPage from './pages/araclar/BazalMetabolizmaHiziPage'
 import TopicDetailPage from './pages/TopicDetailPage'
+import HakkimizdaPage from './pages/hakkimizda/HakkimizdaPage'
+import IletisimPage from './pages/iletisim/IletisimPage'
+import GizlilikPolitikasiPage from './pages/gizlilik-politikasi/GizlilikPolitikasiPage'
 import './App.css'
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <ScrollToTop />
-      <main className="main-content">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/saglik" element={<SaglikPage />} />
-          <Route path="/saglikli-yasam" element={<SaglikliYasamPage />} />
-          <Route path="/beslenme" element={<BeslenmePage />} />
-          <Route path="/fitness" element={<FitnessPage />} />
-          <Route path="/uyku" element={<UykuPage />} />
-          <Route path="/psikoloji" element={<PsikolojiPage />} />
-          <Route path="/araclar" element={<AraclarPage />} />
-          <Route path="/cinsel-saglik" element={<CinselSaglikPage />} />
-          <Route path="/news/japanese-walking" element={<NewsDetailPage />} />
-          <Route path="/araclar/macro-calculator" element={<MacroCalculatorPage />} />
-          <Route path="/araclar/vucut-kitle-indeksi" element={<VucutKitleIndeksiPage />} />
-          <Route path="/araclar/bazal-metabolizma-hizi" element={<BazalMetabolizmaHiziPage />} />
-          <Route path="/saglikli-yasam/:topicSlug" element={<TopicDetailPage />} />
-          <Route path="/ruh-sagligi" element={<PsikolojiPage />} />
-          {/* Diğer rotalar buraya eklenecek */}
-        </Routes>
-      </main>
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <ScrollToTop />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/saglik" element={<SaglikPage />} />
+            <Route path="/saglikli-yasam" element={<SaglikliYasamPage />} />
+            <Route path="/beslenme" element={<BeslenmePage />} />
+            <Route path="/fitness" element={<FitnessPage />} />
+            <Route path="/uyku" element={<UykuPage />} />
+            <Route path="/psikoloji" element={<PsikolojiPage />} />
+            <Route path="/araclar" element={<AraclarPage />} />
+            <Route path="/cinsel-saglik" element={<CinselSaglikPage />} />
+            <Route path="/news/japanese-walking" element={<NewsDetailPage />} />
+            <Route path="/araclar/macro-calculator" element={<MacroCalculatorPage />} />
+            <Route path="/araclar/vucut-kitle-indeksi" element={<VucutKitleIndeksiPage />} />
+            <Route path="/araclar/bazal-metabolizma-hizi" element={<BazalMetabolizmaHiziPage />} />
+            <Route path="/saglikli-yasam/:topicSlug" element={<TopicDetailPage />} />
+            <Route path="/ruh-sagligi" element={<PsikolojiPage />} />
+            <Route path="/hakkimizda" element={<HakkimizdaPage />} />
+            <Route path="/iletisim" element={<IletisimPage />} />
+            <Route path="/gizlilik-politikasi" element={<GizlilikPolitikasiPage />} />
+            {/* Diğer rotalar buraya eklenecek */}
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

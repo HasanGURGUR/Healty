@@ -1,9 +1,21 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 #root {
   /* height: 100%; */
   /* overflow-y: auto; */
   /* max-width: 1280px; */
   /* margin: 0 auto; */
-  padding: 2rem; /* Eski haline döndürüyorum */
+  padding: 0;
   text-align: center;
 }
 
@@ -44,16 +56,18 @@
 }
 
 .app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  /* min-height: 100vh; */ /* Kaldırıyorum */
+  overflow-x: hidden;
 }
 
 .main-content {
-  padding-top: 80px; /* Eski haline döndürüyorum */
+  flex: 1;
   width: 100%;
-  /* padding-left: 4rem; */ /* Kaldırıyorum */
-  /* padding-right: 4rem; */ /* Kaldırıyorum */
-  /* min-height: calc(100vh - 50px); */ /* Kaldırıyorum */
+  overflow-x: hidden;
+  padding-top: 50px; /* Navbar yüksekliği kadar boşluk bırakıldı */
 }
 
 @media (max-width: 768px) {

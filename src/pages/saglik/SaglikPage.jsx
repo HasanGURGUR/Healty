@@ -63,7 +63,7 @@ const healthConditionItems = [
     description: 'Sinir sistemini etkileyen kronik bir hastalık.'
   },
   {
-    title: 'Parkinson’s Disease',
+    title: "Parkinson's Disease",
     image: '/images/vitamins.jpg',
     description: 'Hareketleri etkileyen ilerleyici bir sinir sistemi hastalığı.'
   },
@@ -97,7 +97,7 @@ const healthConditionItems = [
 const SaglikPage = () => {
   return (
     <div>
-      <h1>Sağlık Sayfası</h1>
+      <h1>Sağlık</h1>
       <ItemListSection title="Sağlık Durumları" items={healthConditionItems} />
       {/* Bu sayfaya özgü içerik buraya gelecek */}
     </div>

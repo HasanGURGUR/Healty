@@ -1,0 +1,142 @@
+.iletisim-container {
+  width: 100%;
+  background-color: #f8fafc;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 264px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-description {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 60px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 600px;
+}
+
+.info-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.info-card h3 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 1.2rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.contact-text {
+  font-size: 1.3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.4rem;
+  }
+
+  .contact-text {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+
+  .contact-grid {
+    justify-content: center;
+  }
+
+  .contact-info {
+    justify-content: center;
+  }
+
+  .info-card {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .info-icon {
+    margin: 0 auto 25px;
+  }
+
+  .info-card h3,
+  .info-card p {
+    text-align: center;
+  }
+} 
