@@ -67,7 +67,7 @@ body {
   flex: 1;
   width: 100%;
   overflow-x: hidden;
-  padding-top: 50px; /* Navbar yüksekliği kadar boşluk bırakıldı */
+  padding-top: 60px; /* Header yüksekliği kadar boşluk bırakıldı */
 }
 
 @media (max-width: 768px) {

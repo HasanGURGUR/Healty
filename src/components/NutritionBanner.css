@@ -5,7 +5,6 @@
   transform: translateX(-50%); /* Kendi genişliğinin yarısı kadar sola kaydırarak ortalama */
   margin: 0; /* Marginleri tamamen kaldırıyorum */
   padding: 0; /* İç boşlukları kaldır */
-  margin-top: -64px; /* Tapbar yüksekliği kadar yukarı çek */
   box-sizing: border-box; /* Padding ve border genişliğe dahil edilsin */
   height: 300px; /* Banner yüksekliği */
   /* background: url('/images/nutrition_banner.jpg') no-repeat center center; */ /* Arka plan resmi stilini kaldırıyorum */

@@ -20,11 +20,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Sağlıklı Yaşam</h3>
           <ul>
-            <li><Link to="/saglikli-yasam/fitness">Fitness</Link></li>
-            <li><Link to="/saglikli-yasam/beslenme">Beslenme</Link></li>
-            <li><Link to="/saglikli-yasam/uyku">Uyku</Link></li>
-            <li><Link to="/saglikli-yasam/ruh-sagligi">Ruh Sağlığı</Link></li>
-            <li><Link to="/saglikli-yasam/cinsel-saglik">Cinsel Sağlık</Link></li>
+            <li><Link to="/fitness">Fitness</Link></li>
+            <li><Link to="/beslenme">Beslenme</Link></li>
+            <li><Link to="/uyku">Uyku</Link></li>
+            <li><Link to="/psikoloji">Ruh Sağlığı</Link></li>
+            <li><Link to="/cinsel-saglik">Cinsel Sağlık</Link></li>
           </ul>
         </div>
 
@@ -33,7 +33,6 @@ const Footer = () => {
           <ul>
             <li><Link to="/araclar/vucut-kitle-indeksi">Vücut Kitle İndeksi</Link></li>
             <li><Link to="/araclar/bazal-metabolizma-hizi">Bazal Metabolizma Hızı</Link></li>
-            <li><Link to="/araclar/makro-hesaplayici">Makro Hesaplayıcı</Link></li>
           </ul>
         </div>
 

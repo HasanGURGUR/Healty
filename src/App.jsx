@@ -1,7 +1,7 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/footer/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import HomePage from './pages/home/HomePage'
 import SaglikPage from './pages/saglik/SaglikPage'
@@ -13,7 +13,6 @@ import PsikolojiPage from './pages/psikoloji/PsikolojiPage'
 import AraclarPage from './pages/araclar/AraclarPage'
 import CinselSaglikPage from './pages/cinsel-saglik/CinselSaglikPage'
 import NewsDetailPage from './pages/NewsDetailPage'
-import MacroCalculatorPage from './pages/araclar/MacroCalculatorPage'
 import VucutKitleIndeksiPage from './pages/araclar/VucutKitleIndeksiPage'
 import BazalMetabolizmaHiziPage from './pages/araclar/BazalMetabolizmaHiziPage'
 import TopicDetailPage from './pages/TopicDetailPage'
@@ -24,9 +23,8 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Navbar />
+    <div className="app">
+        <Header />
         <ScrollToTop />
         <main className="main-content">
           <Routes>
@@ -40,11 +38,9 @@ function App() {
             <Route path="/araclar" element={<AraclarPage />} />
             <Route path="/cinsel-saglik" element={<CinselSaglikPage />} />
             <Route path="/news/japanese-walking" element={<NewsDetailPage />} />
-            <Route path="/araclar/macro-calculator" element={<MacroCalculatorPage />} />
             <Route path="/araclar/vucut-kitle-indeksi" element={<VucutKitleIndeksiPage />} />
             <Route path="/araclar/bazal-metabolizma-hizi" element={<BazalMetabolizmaHiziPage />} />
             <Route path="/saglikli-yasam/:topicSlug" element={<TopicDetailPage />} />
-            <Route path="/ruh-sagligi" element={<PsikolojiPage />} />
             <Route path="/hakkimizda" element={<HakkimizdaPage />} />
             <Route path="/iletisim" element={<IletisimPage />} />
             <Route path="/gizlilik-politikasi" element={<GizlilikPolitikasiPage />} />
@@ -53,7 +49,6 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
   )
 }
 
