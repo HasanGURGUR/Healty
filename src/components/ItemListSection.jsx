@@ -8,9 +8,10 @@ const ItemListSection = ({ title, items }) => {
       <div className="item-list-container">
         {items.map((item, index) => (
           <div key={index} className="list-item" onClick={() => {
-            // Burada tıklama olayını işleyebilirsiniz, örneğin detay sayfasına yönlendirme
             console.log('Item clicked:', item.title);
-            // Örnek: window.location.href = item.link;
+            if (item.link) {
+              window.location.href = item.link;
+            }
           }}>
             <div className="item-image-container">
               <img src={item.image} alt={item.title} className="item-image" />

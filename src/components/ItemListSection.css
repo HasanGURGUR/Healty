@@ -27,7 +27,7 @@
   transition: none;
   background: none;
   box-shadow: none;
-  height: 120px;
+  height: auto;
   cursor: pointer;
   max-width: 480px; /* Her item için maksimum genişlik */
 }
@@ -60,8 +60,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Metni üstten hizala */
-  height: 120px;
-  overflow: hidden;
+  flex: 1;
+  overflow: visible;
   text-align: left; /* Metinleri sola hizala */
   padding: 0.5rem 1rem; /* Üstten ve alttan biraz boşluk ekle, yanlardan 1rem */
 }
@@ -71,24 +71,25 @@
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  white-space: nowrap;
+  color: #333;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: left; /* Başlığı sola hizala */
 }
 
 .item-description {
   font-size: 0.9rem;
   color: #555;
   margin-top: 0;
-  white-space: normal;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  max-height: 2.6em;
-  text-align: left; /* Açıklamayı sola hizala */
 }
 
 /* Küçük ekranlar için responsive ayarlar */

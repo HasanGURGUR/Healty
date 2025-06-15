@@ -13,7 +13,10 @@ const HorizontalItemListSection = ({ title, items }) => {
             // Örnek: window.location.href = item.link; // Eğer link varsa
           }}>
             <img src={item.image} alt={item.title} className="horizontal-item-image" />
-            <h3 className="horizontal-item-title">{item.title}</h3>
+            <div className="horizontal-item-content">
+              <h3 className="horizontal-item-title">{item.title}</h3>
+              {item.description && <p className="horizontal-item-description">{item.description}</p>}
+            </div>
           </div>
         ))}
       </div>
