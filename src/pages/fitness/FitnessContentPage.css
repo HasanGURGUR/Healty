@@ -1,0 +1,157 @@
+.fitness-content-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-button:hover {
+  color: #666;
+}
+
+.page-header {
+  text-align: left;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+}
+
+.page-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 800px;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 12px;
+  align-items: flex-start;
+}
+
+.content-image {
+  width: 100%;
+  max-width: 800px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-title-section {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-title {
+  font-size: 2.8rem;
+  margin: 0 0 0.8rem 0;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.content-description {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+.content-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  padding: 0 1rem;
+}
+
+.content-body h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 2rem 0 1rem 0;
+  font-weight: bold;
+}
+
+.content-body h3 {
+  font-size: 1.4rem;
+  color: #444;
+  margin: 1.5rem 0 1rem 0;
+  font-weight: bold;
+}
+
+.content-body p {
+  margin: 1rem 0;
+}
+
+.content-body ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.content-body li {
+  margin: 0.5rem 0;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .content-header {
+    padding: 1rem;
+  }
+
+  .content-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .content-description {
+    font-size: 1.2rem;
+  }
+}
+
+.content-body-image {
+  width: 100%;
+  max-width: 600px; /* İçerik resimlerinin maksimum genişliği */
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0; /* Üstte ve altta boşluk */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 

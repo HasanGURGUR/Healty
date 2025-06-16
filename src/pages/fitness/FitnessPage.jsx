@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NutritionBanner from '../../components/NutritionBanner';
 import ItemListSection from '../../components/ItemListSection.jsx';
 import HorizontalItemListSection from '../../components/HorizontalItemListSection.jsx';
@@ -13,28 +14,28 @@ const FitnessPage = () => {
 
   const exerciseItems = [
     {
-      image: '/images/how_many_steps.jpg',
-      title: 'How Many Steps Do People Take Per Day on Average?',
-      description: 'How many steps do people actually take per day? See how the numbers break down by age, sex,',
-      link: '/articles/how-many-steps'
+      image: '/images/hiit-antrenman.jpg',
+      title: '15 Dakikalık HIIT Antrenmanı',
+      description: 'Yoğun tempoda maksimum yağ yakımı sağlayan kısa süreli HIIT programı.',
+      link: '/fitness/evde-15-dakika-hiit'
     },
     {
-      image: '/images/burpees_benefits.avif',
-      title: 'The Benefits of Burpees and How to Do Them',
-      description: 'If you\'re looking for a way to build strength and endurance, burpees are a great exercise...',
-      link: '/articles/burpees-benefits'
+      image: '/images/direnc-bandi.avif',
+      title: 'Direnç Bandı Egzersizleri',
+      description: 'Minimum ekipmanla tüm vücut kaslarını çalıştıran etkili egzersizler.',
+      link: '/fitness/direnc-bandi-egzersizleri'
     },
     {
       image: '/images/burn_most_calories.jpg',
-      title: '12 Exercises That Burn the Most Calories',
-      description: 'Running burns the most calories per hour, but that doesn\'t mean it\'s the only exercise...',
-      link: '/articles/most-calorie-burning-exercises'
+      title: 'En Çok Kalori Yakan Egzersizler',
+      description: 'Zaman kısıtlaması olanlar için verimli kalori yakma yöntemleri.',
+      link: '/fitness/en-cok-kalori-yakan-egzersizler'
     },
     {
-      image: '/images/muscle_groups.jpg',
-      title: 'What Muscle Groups Are Best to Work Out Together?',
-      description: 'There is no right or wrong way to pair muscle groups for a strength workout, but some...',
-      link: '/articles/best-muscle-groups-to-work-out'
+      image: '/images/yoga.jpg',
+      title: 'Yoga ve Pilates Temel Hareketler',
+      description: 'Stresi azaltan ve esnekliği artıran temel yoga-pilates hareketleri.',
+      link: '/fitness/yoga-pilates-temel-hareketler'
     },
   ];
 
@@ -69,7 +70,7 @@ const FitnessPage = () => {
         bannerDescription={fitnessBannerData.bannerDescription}
         backgroundImage={fitnessBannerData.backgroundImage}
       />
-      <ItemListSection title="EXERCISE" items={exerciseItems} />
+      <ItemListSection title="EGZERSİZ REHBERİ" items={exerciseItems} />
       <HorizontalItemListSection title="DAHA FAZLA OKUMA" items={horizontalExerciseItems} />
       {/* Bu sayfaya özgü içerik buraya gelecek */}
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ItemListSection.css'; // Stil dosyası
 
 const ItemListSection = ({ title, items }) => {
@@ -7,12 +8,7 @@ const ItemListSection = ({ title, items }) => {
       {title && <h2 className="section-title">{title}</h2>}
       <div className="item-list-container">
         {items.map((item, index) => (
-          <div key={index} className="list-item" onClick={() => {
-            console.log('Item clicked:', item.title);
-            if (item.link) {
-              window.location.href = item.link;
-            }
-          }}>
+          <Link to={item.link} key={index} className="list-item">
             <div className="item-image-container">
               <img src={item.image} alt={item.title} className="item-image" />
             </div>
@@ -20,7 +16,7 @@ const ItemListSection = ({ title, items }) => {
               <h3 className="item-title">{item.title}</h3>
               <p className="item-description">{item.description}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

@@ -1,0 +1,218 @@
+.topic-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.topic-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.topic-title {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.topic-image-container {
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #f7fafc;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topic-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.image-loading {
+  color: #4a5568;
+  font-size: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.image-error-message {
+  color: #e53e3e;
+  font-size: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  background: #fff5f5;
+  border: 1px solid #feb2b2;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.topic-description {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+}
+
+.benefits-section,
+.exercises-section,
+.tips-section {
+  margin-bottom: 3rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.benefits-list,
+.tips-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li,
+.tips-list li {
+  padding: 0.75rem 0;
+  color: #4a5568;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.benefits-list li::before,
+.tips-list li::before {
+  content: "•";
+  color: #4299e1;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+/* Yeni tablo stili */
+.exercises-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.exercises-table th {
+  background: #4299e1;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.exercises-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.exercises-table tr:last-child td {
+  border-bottom: none;
+}
+
+.exercises-table tr:nth-child(even) {
+  background: #f7fafc;
+}
+
+.exercises-table tr:hover {
+  background: #ebf8ff;
+}
+
+.exercise-name {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.exercise-duration,
+.exercise-rest {
+  font-weight: 500;
+  color: #4299e1;
+}
+
+.exercise-description {
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+/* Set kartları için stil */
+.set-card {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.set-card h3 {
+  color: #2d3748;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.set-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.set-info-item {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.set-info-item strong {
+  color: #2d3748;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .topic-detail-container {
+    padding: 1rem;
+  }
+
+  .topic-title {
+    font-size: 2rem;
+  }
+
+  .exercises-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .set-info {
+    grid-template-columns: 1fr;
+  }
+} 

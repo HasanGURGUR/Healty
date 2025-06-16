@@ -21,7 +21,7 @@
 
 .list-item {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   border-radius: 0;
   overflow: visible;
   transition: none;
@@ -45,7 +45,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  margin-right: 0.5rem;
+  margin-right: 1rem; /* Boşluğu azalttım */
 }
 
 .item-image {
@@ -59,17 +59,17 @@
 .item-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Metni üstten hizala */
+  justify-content: center;
   flex: 1;
   overflow: visible;
-  text-align: left; /* Metinleri sola hizala */
-  padding: 0.5rem 1rem; /* Üstten ve alttan biraz boşluk ekle, yanlardan 1rem */
+  text-align: left;
+  padding: 0;
+  margin-left: 0.25rem; /* Sol boşluğu azalttım */
 }
 
 .item-title {
   font-size: 1.1rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0; /* Üst margin'i kaldır */
   font-weight: bold;
   color: #333;
   line-height: 1.4;
@@ -83,7 +83,7 @@
 .item-description {
   font-size: 0.9rem;
   color: #555;
-  margin-top: 0;
+  margin: 0;
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -95,11 +95,11 @@
 /* Küçük ekranlar için responsive ayarlar */
 @media (max-width: 768px) {
   .item-list-container {
-    grid-template-columns: repeat(1, 1fr); /* Tabletlerde ve mobil cihazlarda tek sütun */
-    gap: 1.5rem; 
+    grid-template-columns: 1fr;
   }
+  
   .list-item {
-    max-width: none;
+    max-width: 100%;
   }
 
   .item-image-container {

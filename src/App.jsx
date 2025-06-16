@@ -19,6 +19,7 @@ import TopicDetailPage from './pages/TopicDetailPage'
 import HakkimizdaPage from './pages/hakkimizda/HakkimizdaPage'
 import IletisimPage from './pages/iletisim/IletisimPage'
 import GizlilikPolitikasiPage from './pages/gizlilik-politikasi/GizlilikPolitikasiPage'
+import FitnessContentPage from './pages/fitness/FitnessContentPage'
 import './App.css'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route path="/saglikli-yasam" element={<SaglikliYasamPage />} />
             <Route path="/beslenme" element={<BeslenmePage />} />
             <Route path="/fitness" element={<FitnessPage />} />
+            <Route path="/fitness/:id" element={<FitnessContentPage />} />
             <Route path="/uyku" element={<UykuPage />} />
             <Route path="/psikoloji" element={<PsikolojiPage />} />
             <Route path="/araclar" element={<AraclarPage />} />
